@@ -1,9 +1,9 @@
-@prefix : <https://DANS-KNAW-jp/github.io/lab2/vocab.ttl#> .
+@prefix : <https://dans-knaw-jp.github.io/lab2/vocab.ttl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix paul: <https://paulboon.github.io/knowledgegraph/employee-paulboon.ttl#> .
 @prefix jan: <https://orcid.org/0000-0001-8207-2275#> .
 @prefix veronika: <https://orcid.org/0000-0002-9455-8712#> .
-@prefix joke: <https://DANS-KNAW-jp.github.io/IKG/lab2/data.ttl#> .
+@prefix joke: <https://dans-knaw-jp.github.io/IKG/lab2/data.ttl#> .
 
 # Persons
 jan:Jan a :Person ;
