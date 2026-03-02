@@ -1,0 +1,68 @@
+@prefix : <https://DANS-KNAW-jp/github.io/lab2/vocab.ttl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix paul: <https://paulboon.github.io/knowledgegraph/employee-paulboon.ttl#> .
+@prefix jan: <https://orcid.org/0000-0001-8207-2275#> .
+@prefix veronika: <https://orcid.org/0000-0002-9455-8712#> .
+@prefix joke: <https://DANS-KNAW-jp.github.io/IKG/lab2/graph.ttl#> .
+
+# Persons
+jan:Jan a :Person ;
+    :hasAboutPage <https://www.linkedin.com/in/janvanmansum/> ;
+    :name "Jan van Mansum" .
+joke:JokePol a :Person ;
+    :hasAboutPage <https://www.linkedin.com/in/jopol//> ;
+    :hasAboutPage <https://d-bl.github.io/about-us#jo-pol> ;
+    :name "Joke Pol" .
+veronika:Veronika a :Person ;
+    :name "Veronika Irvine" .
+paul:Paul a :Person ;
+    :hasAboutPage <https://www.linkedin.com/in/paul-boon-8a692210/> ;
+    :name "Paul Boon" .
+:Ali a :Person ;
+    :name "Ali Abas" .
+
+# Teams
+:GroundForge a :Team ;
+    :name "GroundForge" ;
+    :hasAboutPage <https://d-bl.github.io/#groundforge> .
+:DansCoreSystems a :Team ;
+    :hasAboutPage <https://github.com/DANS-KNAW/dans-core-systems/#description> ;
+    :name "dans-core-systems" .
+
+# Memberships
+:Membership1 a :Membership ;
+    :membershipOfPerson joke:JokePol ;
+    :membershipOfTeam :GroundForge ;
+    :startDate "2001-01-01"^^xsd:date .
+:Membership2 a :Membership ;
+    :membershipOfPerson veronika:Veronika ;
+    :membershipOfTeam :GroundForge ;
+    :startDate "2013-01-01"^^xsd:date .
+:Membership3 a :Membership ;
+    :membershipOfPerson joke:JokePol ;
+    :membershipOfTeam :DansCoreSystems ;
+    :startDate "2009-05-01"^^xsd:date .
+:Membership4 a :Membership ;
+    :membershipOfPerson jan:Jan ;
+    :membershipOfTeam :DansCoreSystems ;
+    :startDate "2008-02-01"^^xsd:date .
+:Membership5 a :Membership ;
+    :membershipOfPerson paul:Paul ;
+    :membershipOfTeam :DansCoreSystems ;
+    :endDate "2020-12-31"^^xsd:date ;
+    :startDate "2017-10-31"^^xsd:date .
+:Membership6 a :Membership ;
+    :membershipOfPerson :Ali ;
+    :membershipOfTeam :DansCoreSystems ;
+    :startDate "2021-01-01"^^xsd:date .
+
+# Link teams to memberships
+:GroundForge :teamHasMembership :Membership1, :Membership2 .
+:DansCoreSystems :teamHasMembership :Membership3, :Membership4, :Membership5, :Membership6 .
+
+# Link persons to memberships
+joke:JokePol :personHasMembership :Membership1, :Membership3 .
+veronika:Veronika :personHasMembership :Membership2 .
+jan:Jan :personHasMembership :Membership4 .
+paul:Paul :personHasMembership :Membership5 .
+:Ali :personHasMembership :Membership6 .

@@ -1,0 +1,71 @@
+@prefix : <http://example.org/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Classes
+:Team a rdfs:Class ;
+    rdfs:label "Team" ;
+    rdfs:comment "A group or organization that people can be members of." .
+
+:Membership a rdfs:Class ;
+    rdfs:label "Membership" ;
+    rdfs:comment "A relation between a person and a team, with start and optional end date." .
+
+:Person a rdfs:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "An individual who can be a member of a team." .
+
+:AboutPage a rdfs:Class ;
+    rdfs:label "About Page" ;
+    rdfs:comment "A web page or document describing a person or team." .
+
+# Object Properties
+:teamHasMembership a rdf:Property ;
+    rdfs:label "team has membership" ;
+    rdfs:comment "Relates a team to one of its memberships." ;
+    rdfs:domain :Team ;
+    rdfs:range :Membership .
+
+:membershipOfPerson a rdf:Property ;
+    rdfs:label "membership of person" ;
+    rdfs:comment "Relates a membership to the person who holds it." ;
+    rdfs:domain :Membership ;
+    rdfs:range :Person .
+
+:membershipOfTeam a rdf:Property ;
+    rdfs:label "membership of team" ;
+    rdfs:comment "Relates a membership to the team it belongs to." ;
+    rdfs:domain :Membership ;
+    rdfs:range :Team .
+
+:personHasMembership a rdf:Property ;
+    rdfs:label "person has membership" ;
+    rdfs:comment "Relates a person to one of their memberships." ;
+    rdfs:domain :Person ;
+    rdfs:range :Membership .
+
+:hasAboutPage a rdf:Property ;
+    rdfs:label "has about page" ;
+    rdfs:comment "Relates a team or person to an about page describing them. Can have multiple about pages." ;
+    rdfs:domain :Team, :Person ;
+    rdfs:range :AboutPage .
+
+# Data Properties
+:name a rdf:Property ;
+    rdfs:label "name" ;
+    rdfs:comment "The name of a team or person." ;
+    rdfs:domain :Team, :Person ;
+    rdfs:range xsd:string .
+
+:startDate a rdf:Property ;
+    rdfs:label "start date" ;
+    rdfs:comment "The start date of a membership (mandatory)." ;
+    rdfs:domain :Membership ;
+    rdfs:range xsd:date .
+
+:endDate a rdf:Property ;
+    rdfs:label "end date" ;
+    rdfs:comment "The end date of a membership (optional)." ;
+    rdfs:domain :Membership ;
+    rdfs:range xsd:date .
