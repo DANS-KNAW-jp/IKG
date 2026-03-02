@@ -19,7 +19,7 @@ paul:Paul a :Person ;
     :hasAboutPage <https://www.linkedin.com/in/paul-boon-8a692210/> ;
     :name "Paul Boon" .
 :Ali a :Person ;
-    :name "Ali Abas" .
+    :name "Ali Sheiki" .
 
 # Teams
 :GroundForge a :Team ;
