@@ -80,6 +80,6 @@ dataByMe:DansCoreSystems :teamHasMembership dataByMe:Membership3, dataByMe:Membe
 dataByMe:JokePol :personHasMembership dataByMe:Membership1, :Membership3 .
 dataByMe:Veronika :personHasMembership dataByMe:Membership2 .
 dataByMe:Jan :personHasMembership dataByMe:Membership4 .
-dataByPaul:Paul :personHasMembership dataByMe:Membership5 .
+dataByPaul:PaulBoon :personHasMembership dataByMe:Membership5 .
 dataByAli:me :personHasMembership dataByMe:Membership6 .
 
