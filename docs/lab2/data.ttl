@@ -6,7 +6,7 @@
 @prefix dataByPaul: <https://raw.githubusercontent.com/PaulBoon/knowledgegraph/5233c62ea54910d0091656a9323a13f3f31a5975/docs/employee-paulboon.ttl#> .
 
 # 9th March
-@prefix dataByAli: <https://raw.githubusercontent.com/aliassheikh/KnowledgeGraph/cc4540c1c81c5f3100e0c2a71f1fb08e941720a5/data.ttl#>
+@prefix dataByAli: <https://raw.githubusercontent.com/aliassheikh/KnowledgeGraph/cc4540c1c81c5f3100e0c2a71f1fb08e941720a5/data.ttl#> .
 
 # Persons
 myData:Jan a :Person ; :hasAboutPage <https://www.linkedin.com/in/janvanmansum/> ; :name "Jan van Mansum" .
