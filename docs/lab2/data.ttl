@@ -9,33 +9,26 @@
 @prefix dataByAli: <https://raw.githubusercontent.com/aliassheikh/KnowledgeGraph/cc4540c1c81c5f3100e0c2a71f1fb08e941720a5/data.ttl#>
 
 # Persons
-myData:Jan
-    a :Person ;
+myData:Jan a :Person ;
     :hasAboutPage <https://www.linkedin.com/in/janvanmansum/> ;
     :name "Jan van Mansum" .
-myData:JokePol
-    a :Person ;
+myData:JokePol a :Person ;
     :hasAboutPage <https://www.linkedin.com/in/jopol//> ;
     :hasAboutPage <https://d-bl.github.io/about-us#jo-pol> ;
     :name "Joke Pol" .
-myData:Veronika
-    a :Person ;
+myData:Veronika a :Person ;
     :name "Veronika Irvine" .
-dataByPaul:PaulBoon
-    a :Person ;
+dataByPaul:PaulBoon a :Person ;
     :hasAboutPage <https://www.linkedin.com/in/paul-boon-8a692210/> ;
     :name "Paul Boon" .
-dataByAli:me
-    a :Person ;
+dataByAli:me a :Person ;
     :name "Ali Sheiki" .
 
 # Teams
-myData:GroundForge
-    a :Team ;
+myData:GroundForge a :Team ;
     :name "GroundForge" ;
     :hasAboutPage <https://d-bl.github.io/#groundforge> .
-myData:DansCoreSystems
-    a :Team ;
+myData:DansCoreSystems a :Team ;
     :hasAboutPage <https://github.com/DANS-KNAW/dans-core-systems/#description> ;
     :name "dans-core-systems" .
 
