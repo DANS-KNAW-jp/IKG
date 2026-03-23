@@ -1,6 +1,6 @@
 @prefix : <https://dans-knaw-jp.github.io/IKG/lab2/vocab.ttl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix myData: <https://dans-knaw-jp.github.io/IKG/lab2/data.ttl#> .
+@prefix dataByMe: <https://dans-knaw-jp.github.io/IKG/lab2/data.ttl#> .
 
 # 4th March
 @prefix dataByPaul: <https://raw.githubusercontent.com/PaulBoon/knowledgegraph/5233c62ea54910d0091656a9323a13f3f31a5975/docs/employee-paulboon.ttl#> .
@@ -9,16 +9,16 @@
 @prefix dataByAli: <https://raw.githubusercontent.com/aliassheikh/KnowledgeGraph/cc4540c1c81c5f3100e0c2a71f1fb08e941720a5/data.ttl#> .
 
 # Persons
-myData:Jan
+dataByMe:Jan
     a :Person ;
     :hasAboutPage <https://www.linkedin.com/in/janvanmansum/> ;
     :name "JvM" .
-myData:JokePol
+dataByMe:JokePol
     a :Person ;
     :hasAboutPage <https://www.linkedin.com/in/jopol//> ;
     :hasAboutPage <https://d-bl.github.io/about-us#jo-pol> ;
     :name "Joke Pol" .
-myData:Veronika
+dataByMe:Veronika
     a :Person ;
     :name "Veronika Irvine" .
 dataByPaul:PaulBoon
@@ -30,56 +30,56 @@ dataByAli:me
     :name "AS" .
 
 # Teams
-myData:GroundForge
+dataByMe:GroundForge
     a :Team ;
     :name "GroundForge" ;
     :hasAboutPage <https://d-bl.github.io/#groundforge> .
-myData:DansCoreSystems
+dataByMe:DansCoreSystems
     a :Team ;
     :hasAboutPage <https://github.com/DANS-KNAW/dans-core-systems/#description> ;
     :name "dans-core-systems" .
 
 # Memberships
-myData:Membership1
+dataByMe:Membership1
     a :Membership ;
-    :membershipOfPerson myData:JokePol ;
-    :membershipOfTeam myData:GroundForge ;
+    :membershipOfPerson dataByMe:JokePol ;
+    :membershipOfTeam dataByMe:GroundForge ;
     :startDate "2001-01-01"^^xsd:date .
-myData:Membership2
+dataByMe:Membership2
     a :Membership ;
-    :membershipOfPerson myData:Veronika ;
+    :membershipOfPerson dataByMe:Veronika ;
     :membershipOfTeam :GroundForge ;
     :startDate "2013-01-01"^^xsd:date .
-myData:Membership3
+dataByMe:Membership3
     a :Membership ;
-    :membershipOfPerson myData:JokePol ;
-    :membershipOfTeam myData:DansCoreSystems ;
+    :membershipOfPerson dataByMe:JokePol ;
+    :membershipOfTeam dataByMe:DansCoreSystems ;
     :startDate "2009-05-01"^^xsd:date .
-myData:Membership4
+dataByMe:Membership4
     a :Membership ;
-    :membershipOfPerson myData:Jan ;
-    :membershipOfTeam myData:DansCoreSystems ;
+    :membershipOfPerson dataByMe:Jan ;
+    :membershipOfTeam dataByMe:DansCoreSystems ;
     :startDate "2008-02-01"^^xsd:date .
-myData:Membership5
+dataByMe:Membership5
     a :Membership ;
-    :membershipOfPerson myData:Paul ;
-    :membershipOfTeam myData:DansCoreSystems ;
+    :membershipOfPerson dataByMe:Paul ;
+    :membershipOfTeam dataByMe:DansCoreSystems ;
     :endDate "2020-12-31"^^xsd:date ;
     :startDate "2017-10-31"^^xsd:date .
-myData:Membership6
+dataByMe:Membership6
     a :Membership ;
     :membershipOfPerson dataByAli:me ;
-    :membershipOfTeam myData:DansCoreSystems ;
+    :membershipOfTeam dataByMe:DansCoreSystems ;
     :startDate "2021-01-01"^^xsd:date .
 
 # Link teams to memberships
-myData:GroundForge :teamHasMembership myData:Membership1, myData:Membership2 .
-myData:DansCoreSystems :teamHasMembership myData:Membership3, myData:Membership4, myData:Membership5, myData:Membership6 .
+dataByMe:GroundForge :teamHasMembership dataByMe:Membership1, dataByMe:Membership2 .
+dataByMe:DansCoreSystems :teamHasMembership dataByMe:Membership3, dataByMe:Membership4, dataByMe:Membership5, dataByMe:Membership6 .
 
 # Link persons to memberships
-myData:JokePol :personHasMembership myData:Membership1, :Membership3 .
-myData:Veronika :personHasMembership myData:Membership2 .
-myData:Jan :personHasMembership myData:Membership4 .
-dataByPaul:Paul :personHasMembership myData:Membership5 .
-dataByAli:me :personHasMembership myData:Membership6 .
+dataByMe:JokePol :personHasMembership dataByMe:Membership1, :Membership3 .
+dataByMe:Veronika :personHasMembership dataByMe:Membership2 .
+dataByMe:Jan :personHasMembership dataByMe:Membership4 .
+dataByPaul:Paul :personHasMembership dataByMe:Membership5 .
+dataByAli:me :personHasMembership dataByMe:Membership6 .
 
