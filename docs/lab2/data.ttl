@@ -62,7 +62,7 @@ dataByMe:Membership4
     :startDate "2008-02-01"^^xsd:date .
 dataByMe:Membership5
     a :Membership ;
-    :membershipOfPerson dataByMe:Paul ;
+    :membershipOfPerson dataByPaul:Paul ;
     :membershipOfTeam dataByMe:DansCoreSystems ;
     :endDate "2020-12-31"^^xsd:date ;
     :startDate "2017-10-31"^^xsd:date .
