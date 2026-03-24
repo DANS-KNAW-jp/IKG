@@ -64,15 +64,21 @@ dataByMe:Membership6
     vocabByMe:membershipOfPerson dataByAli:me ;
     vocabByMe:membershipOfTeam dataByMe:DansCoreSystems ;
     vocabByMe:startDate "2021-01-01"^^xsd:date .
+dataByMe:Membership7
+    a vocabByMe:Membership ;
+    vocabByMe:membershipOfPerson <https://alexbrandsen.nl/kg/data/#alexbrandsenAlex> ;
+    vocabByMe:membershipOfTeam dataByMe:DansCoreSystems ;
+    vocabByMe:startDate "2025-08-01"^^xsd:date .
 
 # Link teams to memberships
 dataByMe:GroundForge vocabByMe:teamHasMembership dataByMe:Membership1, dataByMe:Membership2 .
-dataByMe:DansCoreSystems vocabByMe:teamHasMembership dataByMe:Membership3, dataByMe:Membership4, dataByPaul:Membership5, dataByAli:Membership6 .
+dataByMe:DansCoreSystems vocabByMe:teamHasMembership dataByMe:Membership3, dataByMe:Membership4, dataByMe:Membership5, dataByMe:Membership6 .
 
 # Link persons to memberships
-dataByMe:JokePol vocabByMe:personHasMembership dataByMe:Membership1, vocabByMe:Membership3 .
-dataByMe:Veronika vocabByMe:personHasMembership dataByMe:Membership2 .
-dataByMe:Jan vocabByMe:personHasMembership dataByMe:Membership4 .
+dataByMe:JokePol    vocabByMe:personHasMembership dataByMe:Membership1, vocabByMe:Membership3 .
+dataByMe:Veronika   vocabByMe:personHasMembership dataByMe:Membership2 .
+dataByMe:Jan        vocabByMe:personHasMembership dataByMe:Membership4 .
 dataByPaul:PaulBoon vocabByMe:personHasMembership dataByMe:Membership5 .
-dataByAli:me vocabByMe:personHasMembership dataByMe:Membership6 .
+dataByAli:me        vocabByMe:personHasMembership dataByMe:Membership6 .
+<https://alexbrandsen.nl/kg/data/#alexbrandsenAlex> vocabByMe:personHasMembership dataByMe:Membership7 .
 
