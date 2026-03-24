@@ -71,7 +71,7 @@ dataByMe:Membership6
     vocabByMe:startDate "2021-01-01"^^xsd:date .
 dataByMe:Membership7
     a vocabByMe:Membership ;
-    vocabByMe:membershipOfPerson <https://alexbrandsen.nl/kg/data/#alexbrandsenAlex> ;
+    vocabByMe:membershipOfPerson <https://alexbrandsen.nl/kg/data/#Alex> ;
     vocabByMe:membershipOfTeam dataByMe:DansCoreSystems ;
     vocabByMe:startDate "2025-08-01"^^xsd:date .
 
@@ -85,5 +85,5 @@ dataByMe:Veronika   vocabByMe:personHasMembership dataByMe:Membership2 .
 dataByMe:Jan        vocabByMe:personHasMembership dataByMe:Membership4 .
 dataByPaul:PaulBoon vocabByMe:personHasMembership dataByMe:Membership5 .
 dataByAli:me        vocabByMe:personHasMembership dataByMe:Membership6 .
-<https://alexbrandsen.nl/kg/data/#alexbrandsenAlex> vocabByMe:personHasMembership dataByMe:Membership7 .
+<https://alexbrandsen.nl/kg/data/#Alex> vocabByMe:personHasMembership dataByMe:Membership7 .
 
