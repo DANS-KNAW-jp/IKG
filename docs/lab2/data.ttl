@@ -1,7 +1,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix vocabByMe: <https://raw.githubusercontent.com/DANS-KNAW-jp/IKG/master/docs/lab2/vocab.ttl#> .
-@prefix dataByMe: <https://raw.githubusercontent.com/DANS-KNAW-jp/IKG/master/docs/lab2/data.ttl#> .
+@prefix vocabByMe: <https://raw.githubusercontent.com/DANS-KNAW-jp/IKG/lab3-part2/docs/lab2/vocab.ttl#> .
+@prefix dataByMe: <https://raw.githubusercontent.com/DANS-KNAW-jp/IKG/lab3-part2/docs/lab2/data.ttl#> .
 
 # 4th March
 @prefix dataByPaul: <https://raw.githubusercontent.com/PaulBoon/knowledgegraph/5233c62ea54910d0091656a9323a13f3f31a5975/docs/employee-paulboon.ttl#> .
