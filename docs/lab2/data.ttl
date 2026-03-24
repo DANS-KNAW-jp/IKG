@@ -21,12 +21,6 @@ dataByMe:JokePol
 dataByMe:Veronika
     a :Person ;
     :name "Veronika Irvine" .
-dataByPaul:PaulBoon
-    a :Person ;
-    :hasAboutPage <https://www.linkedin.com/in/paul-boon-8a692210/> ;
-    :name "PB" .
-dataByAli:me
-    a :Person .
 
 # Teams
 dataByMe:GroundForge
