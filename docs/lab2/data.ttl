@@ -67,7 +67,7 @@ dataByMe:Membership6
 
 # Link teams to memberships
 dataByMe:GroundForge :teamHasMembership dataByMe:Membership1, dataByMe:Membership2 .
-dataByMe:DansCoreSystems :teamHasMembership dataByMe:Membership3, dataByMe:Membership4, dataByMe:Membership5, dataByMe:Membership6 .
+dataByMe:DansCoreSystems :teamHasMembership dataByMe:Membership3, dataByMe:Membership4, dataByPaul:Membership5, dataByAli:Membership6 .
 
 # Link persons to memberships
 dataByMe:JokePol :personHasMembership dataByMe:Membership1, :Membership3 .
