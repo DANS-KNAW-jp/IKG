@@ -1,6 +1,6 @@
-@prefix : <https://dans-knaw-jp.github.io/IKG/lab2/vocab.ttl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dataByMe: <https://dans-knaw-jp.github.io/IKG/lab2/data.ttl#> .
+@prefix vocabByMe: <https://raw.githubusercontent.com/DANS-KNAW-jp/IKG/master/docs/lab2/vocab.ttl#> .
+@prefix dataByMe: <https://raw.githubusercontent.com/DANS-KNAW-jp/IKG/master/docs/lab2/data.ttl#> .
 
 # 4th March
 @prefix dataByPaul: <https://raw.githubusercontent.com/PaulBoon/knowledgegraph/5233c62ea54910d0091656a9323a13f3f31a5975/docs/employee-paulboon.ttl#> .
@@ -10,69 +10,69 @@
 
 # Persons
 dataByMe:Jan
-    a :Person ;
-    :hasAboutPage <https://www.linkedin.com/in/janvanmansum/> ;
-    :name "JvM" .
+    a vocabByMe:Person ;
+    vocabByMe:hasAboutPage <https://www.linkedin.com/in/janvanmansum/> ;
+    vocabByMe:name "JvM" .
 dataByMe:JokePol
-    a :Person ;
-    :hasAboutPage <https://www.linkedin.com/in/jopol//> ;
-    :hasAboutPage <https://d-bl.github.io/about-us#jo-pol> ;
-    :name "Joke Pol" .
+    a vocabByMe:Person ;
+    vocabByMe:hasAboutPage <https://www.linkedin.com/in/jopol//> ;
+    vocabByMe:hasAboutPage <https://d-bl.github.io/about-us#jo-pol> ;
+    vocabByMe:name "Joke Pol" .
 dataByMe:Veronika
-    a :Person ;
-    :name "Veronika Irvine" .
+    a vocabByMe:Person ;
+    vocabByMe:name "Veronika Irvine" .
 
 # Teams
 dataByMe:GroundForge
-    a :Team ;
-    :name "GroundForge" ;
-    :hasAboutPage <https://d-bl.github.io/#groundforge> .
+    a vocabByMe:Team ;
+    vocabByMe:name "GroundForge" ;
+    vocabByMe:hasAboutPage <https://d-bl.github.io/#groundforge> .
 dataByMe:DansCoreSystems
-    a :Team ;
-    :hasAboutPage <https://github.com/DANS-KNAW/dans-core-systems/#description> ;
-    :name "dans-core-systems" .
+    a vocabByMe:Team ;
+    vocabByMe:hasAboutPage <https://github.com/DANS-KNAW/dans-core-systems/#description> ;
+    vocabByMe:name "dans-core-systems" .
 
 # Memberships
 dataByMe:Membership1
-    a :Membership ;
-    :membershipOfPerson dataByMe:JokePol ;
-    :membershipOfTeam dataByMe:GroundForge ;
-    :startDate "2001-01-01"^^xsd:date .
+    a vocabByMe:Membership ;
+    vocabByMe:membershipOfPerson dataByMe:JokePol ;
+    vocabByMe:membershipOfTeam dataByMe:GroundForge ;
+    vocabByMe:startDate "2001-01-01"^^xsd:date .
 dataByMe:Membership2
-    a :Membership ;
-    :membershipOfPerson dataByMe:Veronika ;
-    :membershipOfTeam :GroundForge ;
-    :startDate "2013-01-01"^^xsd:date .
+    a vocabByMe:Membership ;
+    vocabByMe:membershipOfPerson dataByMe:Veronika ;
+    vocabByMe:membershipOfTeam vocabByMe:GroundForge ;
+    vocabByMe:startDate "2013-01-01"^^xsd:date .
 dataByMe:Membership3
-    a :Membership ;
-    :membershipOfPerson dataByMe:JokePol ;
-    :membershipOfTeam dataByMe:DansCoreSystems ;
-    :startDate "2009-05-01"^^xsd:date .
+    a vocabByMe:Membership ;
+    vocabByMe:membershipOfPerson dataByMe:JokePol ;
+    vocabByMe:membershipOfTeam dataByMe:DansCoreSystems ;
+    vocabByMe:startDate "2009-05-01"^^xsd:date .
 dataByMe:Membership4
-    a :Membership ;
-    :membershipOfPerson dataByMe:Jan ;
-    :membershipOfTeam dataByMe:DansCoreSystems ;
-    :startDate "2008-02-01"^^xsd:date .
+    a vocabByMe:Membership ;
+    vocabByMe:membershipOfPerson dataByMe:Jan ;
+    vocabByMe:membershipOfTeam dataByMe:DansCoreSystems ;
+    vocabByMe:startDate "2008-02-01"^^xsd:date .
 dataByMe:Membership5
-    a :Membership ;
-    :membershipOfPerson dataByPaul:PaulBoon ;
-    :membershipOfTeam dataByMe:DansCoreSystems ;
-    :endDate "2020-12-31"^^xsd:date ;
-    :startDate "2017-10-31"^^xsd:date .
+    a vocabByMe:Membership ;
+    vocabByMe:membershipOfPerson dataByPaul:PaulBoon ;
+    vocabByMe:membershipOfTeam dataByMe:DansCoreSystems ;
+    vocabByMe:endDate "2020-12-31"^^xsd:date ;
+    vocabByMe:startDate "2017-10-31"^^xsd:date .
 dataByMe:Membership6
-    a :Membership ;
-    :membershipOfPerson dataByAli:me ;
-    :membershipOfTeam dataByMe:DansCoreSystems ;
-    :startDate "2021-01-01"^^xsd:date .
+    a vocabByMe:Membership ;
+    vocabByMe:membershipOfPerson dataByAli:me ;
+    vocabByMe:membershipOfTeam dataByMe:DansCoreSystems ;
+    vocabByMe:startDate "2021-01-01"^^xsd:date .
 
 # Link teams to memberships
-dataByMe:GroundForge :teamHasMembership dataByMe:Membership1, dataByMe:Membership2 .
-dataByMe:DansCoreSystems :teamHasMembership dataByMe:Membership3, dataByMe:Membership4, dataByPaul:Membership5, dataByAli:Membership6 .
+dataByMe:GroundForge vocabByMe:teamHasMembership dataByMe:Membership1, dataByMe:Membership2 .
+dataByMe:DansCoreSystems vocabByMe:teamHasMembership dataByMe:Membership3, dataByMe:Membership4, dataByPaul:Membership5, dataByAli:Membership6 .
 
 # Link persons to memberships
-dataByMe:JokePol :personHasMembership dataByMe:Membership1, :Membership3 .
-dataByMe:Veronika :personHasMembership dataByMe:Membership2 .
-dataByMe:Jan :personHasMembership dataByMe:Membership4 .
-dataByPaul:PaulBoon :personHasMembership dataByMe:Membership5 .
-dataByAli:me :personHasMembership dataByMe:Membership6 .
+dataByMe:JokePol vocabByMe:personHasMembership dataByMe:Membership1, vocabByMe:Membership3 .
+dataByMe:Veronika vocabByMe:personHasMembership dataByMe:Membership2 .
+dataByMe:Jan vocabByMe:personHasMembership dataByMe:Membership4 .
+dataByPaul:PaulBoon vocabByMe:personHasMembership dataByMe:Membership5 .
+dataByAli:me vocabByMe:personHasMembership dataByMe:Membership6 .
 
