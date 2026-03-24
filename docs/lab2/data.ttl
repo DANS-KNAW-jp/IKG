@@ -1,4 +1,5 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix vocabByMe: <https://raw.githubusercontent.com/DANS-KNAW-jp/IKG/master/docs/lab2/vocab.ttl#> .
 @prefix dataByMe: <https://raw.githubusercontent.com/DANS-KNAW-jp/IKG/master/docs/lab2/data.ttl#> .
 
