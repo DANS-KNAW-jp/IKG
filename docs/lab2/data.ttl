@@ -8,6 +8,9 @@
 # 9th March
 @prefix dataByAli: <https://raw.githubusercontent.com/aliassheikh/KnowledgeGraph/cc4540c1c81c5f3100e0c2a71f1fb08e941720a5/data.ttl#> .
 
+dataByAli:me owl:sameAs <https://aliassheikh.github.io/KnowledgeGraph/data.ttl#me> .
+
+
 # Persons
 dataByMe:Jan
     a vocabByMe:Person ;
